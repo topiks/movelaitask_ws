@@ -42,6 +42,13 @@ roslaunch movement_controller pure_pursuit.launch
 ```
 ![img](https://github.com/topiks/movelaitask_ws/blob/main/img/pure_pursuit.png "pure pursuit controller") \
 Here is the [Video](https://drive.google.com/file/d/11jex7njR655JeiUE1KLEwod_3mLI6823/view?usp=sharing) Result Documentations
+## How to Change Waypoints Path
+```
+cd path/moveltask_ws/src/movement_controller/param
+# edit waypoint_param.yaml, each points is in cm, then save
+sudo docker build --no-cache -t ros_taufik .
+sudo docker compose up -d
+```
 ## How to Launch Simplify Path Node
 ```
 sudo docker exec -it ros bash
@@ -54,10 +61,5 @@ rostopic pub /filtered_path std_msgs/Int64 "data: 50"
 ```
 ![img](https://github.com/topiks/movelaitask_ws/blob/main/img/simplify_path.png "simplify path") \
 Here is the [Video](https://drive.google.com/file/d/16KxoG0dSvYe09SOHVrp3sLFT5nw5whLe/view?usp=sharing) Result Documentations
-## How to Change Waypoints Path
-```
-cd path/moveltask_ws/src/movement_controller/param
-# edit waypoint_param.yaml, each points is in cm, then save
-sudo docker build --no-cache -t ros_taufik .
-sudo docker compose up -d
-```
+## Seirios Demo Video
+The Seirios Demo Video can be accessed here [Video](https://drive.google.com/file/d/1sFHoIaDMiL08yOQbOp_7Ec_2LuyTFyC3/view?usp=sharing) 
