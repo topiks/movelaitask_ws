@@ -24,6 +24,7 @@ This repository using #turtlebot3 ros package from ROBOTIS to provide the robot 
 git clone https://github.com/topiks/movelaitask_ws.git
 cd path/movelaitask_ws
 sudo docker build --no-cache -t ros_taufik .
+xhost +
 sudo docker compose up -d
 ```
 
