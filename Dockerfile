@@ -17,4 +17,4 @@ COPY ./tm_entrypoint.sh /
 RUN chmod +x /tm_entrypoint.sh
 
 ENTRYPOINT [ "/tm_entrypoint.sh" ]
-# CMD [ "roslaunch", "movement_controller", "start.launch" ]
+CMD [ "roscore" ]
