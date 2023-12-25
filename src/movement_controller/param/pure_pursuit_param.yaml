@@ -1,0 +1,5 @@
+velocity:
+  linear: 0.7
+  angular: 1
+pure_pursuit:
+  lookahead: 0.5

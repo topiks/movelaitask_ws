@@ -1,0 +1,10 @@
+<launch>
+    <rosparam command="load" file="$(find movement_controller)/param/pure_pursuit_param.yaml"/>
+    <rosparam command="load" file="$(find movement_controller)/param/waypoint_param.yaml"/>
+
+    <include file="$(find turtlebot3_gazebo)/launch/turtlebot3_empty_world.launch"/>
+    <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher"/>
+    <node name="rviz" pkg="rviz" type="rviz" args="-d $(find movement_controller)/rviz/config_pure_pursuit.rviz"/>
+
+    <node name="control_pure_pursuit" pkg="movement_controller" type="control_pure_pursuit" output="screen"/>
+</launch>

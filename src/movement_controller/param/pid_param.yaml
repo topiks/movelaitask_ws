@@ -1,0 +1,11 @@
+velocity:
+  linear: 0.6
+  angular: 1
+pid_vel:
+  kp: 0.8
+  ki: 0.001
+  kd: 0
+pid_theta:
+  kp: 2
+  ki: 0
+  kd: 0

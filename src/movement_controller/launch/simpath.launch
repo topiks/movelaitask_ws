@@ -1,0 +1,6 @@
+<launch>
+    <node name="simplify_path" pkg="movement_controller" type="simplify_path.py" output="screen" respawn="true" />
+
+    <!-- rviz -->
+    <node name="rviz" pkg="rviz" type="rviz" args="-d $(find movement_controller)/rviz/simpath.rviz" output="screen" />
+</launch>

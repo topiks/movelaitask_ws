@@ -1,0 +1,14 @@
+services:
+  ros:
+    image: ros_taufik
+    container_name: ros
+    environment:
+      - TZ=Asia/Jakarta
+      - DISPLAY
+      - QT_X11_NO_MITSHM=1
+    volumes:
+      - ./tmp_docker/x11/tmp/.X11-unix:/tmp/.X11-unix
+    tty: true
+    stdin_open: true
+    network_mode: host
+    restart: unless-stopped
