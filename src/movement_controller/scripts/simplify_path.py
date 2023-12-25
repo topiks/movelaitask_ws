@@ -19,6 +19,7 @@ class SimpPath(object):
 
         self.path = []
         self.simppath = []
+        self.is_read_bag = False
 
         # -----------------------
 
@@ -37,7 +38,8 @@ class SimpPath(object):
     # --------------------------------------------------
         
     def timer_10hz(self, event):
-        self.publish_point_raw()
+        if self.is_read_bag == True:
+            self.publish_point_raw()
 
     # --------------------------------------------------
             
