@@ -32,7 +32,7 @@ sudo docker compose up -d
 sudo docker exec -it ros bash
 roslaunch movement_controller pid.launch
 ```
-![img](https://github.com/topiks/movelaitask_ws/img/pid.png "pid controller") \
+![img](https://github.com/topiks/movelaitask_ws/blob/main/img/pid.png "pid controller") \
 Here is the [Video](https://drive.google.com/file/d/1PvAO-_YjhpiayiwcvIm8lM3yrm1fiWzl/view?usp=sharing) Result Documentations
 
 ## How to Launch Pure Pursuit Controller
@@ -40,7 +40,7 @@ Here is the [Video](https://drive.google.com/file/d/1PvAO-_YjhpiayiwcvIm8lM3yrm1
 sudo docker exec -it ros bash
 roslaunch movement_controller pure_pursuit.launch
 ```
-![img](https://github.com/topiks/movelaitask_ws/img/pure_pursuit.png "pure pursuit controller") \
+![img](https://github.com/topiks/movelaitask_ws/blob/main/img/pure_pursuit.png "pure pursuit controller") \
 Here is the [Video](https://drive.google.com/file/d/11jex7njR655JeiUE1KLEwod_3mLI6823/view?usp=sharing) Result Documentations
 ## How to Launch Simplify Path Node
 ```
@@ -52,7 +52,7 @@ sudo docker exec -it ros bash
 # publish number of output path points, adjusted
 rostopic pub /filtered_path std_msgs/Int64 "data: 50"
 ```
-![img](https://github.com/topiks/movelaitask_ws/img/simplify_path.png "simplify path") \
+![img](https://github.com/topiks/movelaitask_ws/blob/main/img/simplify_path.png "simplify path") \
 Here is the [Video](https://drive.google.com/file/d/16KxoG0dSvYe09SOHVrp3sLFT5nw5whLe/view?usp=sharing) Result Documentations
 ## How to Change Waypoints Path
 ```
