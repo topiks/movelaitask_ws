@@ -19,6 +19,8 @@ This repository using #turtlebot3 ros package from ROBOTIS to provide the robot 
     |-- simplify_path (py)
 ```
 
+## Installation
+All of the installation steps is documented in this [Video](https://drive.google.com/file/d/1DZTHz19P_wwNGgBiONNE56TjIumUCMtw/view?usp=sharing) or follow the installation steps below
 ## How to Create Docker Container
 ```
 git clone https://github.com/topiks/movelaitask_ws.git
