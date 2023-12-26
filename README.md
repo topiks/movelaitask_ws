@@ -1,6 +1,6 @@
 # movelaitask_ws
 
-This repository using #turtlebot3 ros package from ROBOTIS to provide the robot phisics including sensors and actuators also its world on gazebo 11 simulation. All of the task result explain in [this](https://docs.readme.com/rdmd/docs/embeds) document
+This repository using #turtlebot3 ros package from ROBOTIS to provide the robot phisics including sensors and actuators also its world on gazebo 11 simulation. All of the task result is explained in [this](https://drive.google.com/file/d/1G33DJiKuEHJNVGI5gunHwJYG51DkUTYg/view?usp=sharing) document
 
 ### Structure of Packages
 ```
